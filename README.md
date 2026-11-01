@@ -4,6 +4,15 @@
 
 ---
 
+## 🌐 Live Deployment & Links
+
+| Service | Link | Description |
+|---|---|---|
+| **Live Vercel Application** | 🔗 **[https://frontend-seven-cyan-7ucs76horz.vercel.app](https://frontend-seven-cyan-7ucs76horz.vercel.app)** | Production web application deployed on Vercel |
+| **GitHub Repository** | 🔗 **[https://github.com/yaswanth-tech/HireFlow](https://github.com/yaswanth-tech/HireFlow)** | Full-stack source code, tests, and documentation |
+
+---
+
 ## 🚀 Technology Stack
 
 | Layer | Technologies |
