@@ -1,0 +1,187 @@
+{
+  "total_edge_cases": 20,
+  "dataset_seed": 20261022,
+  "exported_at": "2026-10-30T04:24:05.389036",
+  "ground_truth_exceptions": [
+    {
+      "id": "GT-000001",
+      "entity_type": "OFFER",
+      "entity_id": "OFF-2026-000001",
+      "exception_type": "SALARY_BAND_VIOLATION",
+      "description": "Injected offer OFF-2026-000001 exceeds requisition maximum salary $140,000 with salary $185,000.",
+      "injected_at": "2026-10-30T04:24:04.110839",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000002",
+      "entity_type": "OFFER",
+      "entity_id": "OFF-2026-000002",
+      "exception_type": "SALARY_BAND_VIOLATION",
+      "description": "Injected offer OFF-2026-000002 exceeds requisition maximum salary $190,000 with salary $235,000.",
+      "injected_at": "2026-10-30T04:24:04.111299",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000003",
+      "entity_type": "OFFER",
+      "entity_id": "OFF-2026-000003",
+      "exception_type": "SALARY_BAND_VIOLATION",
+      "description": "Injected offer OFF-2026-000003 exceeds requisition maximum salary $190,000 with salary $235,000.",
+      "injected_at": "2026-10-30T04:24:04.111661",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000004",
+      "entity_type": "OFFER",
+      "entity_id": "OFF-2026-000004",
+      "exception_type": "SALARY_BAND_VIOLATION",
+      "description": "Injected offer OFF-2026-000004 exceeds requisition maximum salary $140,000 with salary $185,000.",
+      "injected_at": "2026-10-30T04:24:04.111970",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000005",
+      "entity_type": "OFFER",
+      "entity_id": "OFF-2026-000005",
+      "exception_type": "SALARY_BAND_VIOLATION",
+      "description": "Injected offer OFF-2026-000005 exceeds requisition maximum salary $100,000 with salary $145,000.",
+      "injected_at": "2026-10-30T04:24:04.112244",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000006",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-001991, INT-2026-001992",
+      "exception_type": "DOUBLE_BOOKING",
+      "description": "Interviewer Conflict Reviewer 1 double-booked across interviews INT-2026-001991 and INT-2026-001992.",
+      "injected_at": "2026-10-30T04:24:04.114318",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000007",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-001993, INT-2026-001994",
+      "exception_type": "DOUBLE_BOOKING",
+      "description": "Interviewer Conflict Reviewer 2 double-booked across interviews INT-2026-001993 and INT-2026-001994.",
+      "injected_at": "2026-10-30T04:24:04.115219",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000008",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-001995, INT-2026-001996",
+      "exception_type": "DOUBLE_BOOKING",
+      "description": "Interviewer Conflict Reviewer 3 double-booked across interviews INT-2026-001995 and INT-2026-001996.",
+      "injected_at": "2026-10-30T04:24:04.116370",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000009",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-001997, INT-2026-001998",
+      "exception_type": "DOUBLE_BOOKING",
+      "description": "Interviewer Conflict Reviewer 4 double-booked across interviews INT-2026-001997 and INT-2026-001998.",
+      "injected_at": "2026-10-30T04:24:04.117605",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000010",
+      "entity_type": "APPLICATION",
+      "entity_id": "APP-CAND-000004-REQ-2026-000189",
+      "exception_type": "ADVANCED_WITHOUT_REVIEW",
+      "description": "Application APP-CAND-000004-REQ-2026-000189 in stage 'HIRED' has zero completed review scorecards.",
+      "injected_at": "2026-10-30T04:24:04.121076",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000011",
+      "entity_type": "APPLICATION",
+      "entity_id": "APP-CAND-000014-REQ-2026-000168",
+      "exception_type": "ADVANCED_WITHOUT_REVIEW",
+      "description": "Application APP-CAND-000014-REQ-2026-000168 in stage 'HIRED' has zero completed review scorecards.",
+      "injected_at": "2026-10-30T04:24:04.121432",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000012",
+      "entity_type": "APPLICATION",
+      "entity_id": "APP-CAND-000017-REQ-2026-000188",
+      "exception_type": "ADVANCED_WITHOUT_REVIEW",
+      "description": "Application APP-CAND-000017-REQ-2026-000188 in stage 'OFFER' has zero completed review scorecards.",
+      "injected_at": "2026-10-30T04:24:04.121758",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000013",
+      "entity_type": "APPLICATION",
+      "entity_id": "APP-CAND-000023-REQ-2026-000183",
+      "exception_type": "ADVANCED_WITHOUT_REVIEW",
+      "description": "Application APP-CAND-000023-REQ-2026-000183 in stage 'OFFER' has zero completed review scorecards.",
+      "injected_at": "2026-10-30T04:24:04.122176",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000014",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-990000",
+      "exception_type": "WITHDRAWN_CANDIDATE_SCHEDULED",
+      "description": "Interview INT-2026-990000 remains SCHEDULED for candidate application APP-CAND-000006-REQ-2026-000037 which is WITHDRAWN.",
+      "injected_at": "2026-10-30T04:24:04.125817",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000015",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-990001",
+      "exception_type": "WITHDRAWN_CANDIDATE_SCHEDULED",
+      "description": "Interview INT-2026-990001 remains SCHEDULED for candidate application APP-CAND-000032-REQ-2026-000089 which is REJECTED.",
+      "injected_at": "2026-10-30T04:24:04.126423",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000016",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-990002",
+      "exception_type": "WITHDRAWN_CANDIDATE_SCHEDULED",
+      "description": "Interview INT-2026-990002 remains SCHEDULED for candidate application APP-CAND-000042-REQ-2026-000047 which is REJECTED.",
+      "injected_at": "2026-10-30T04:24:04.126858",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000017",
+      "entity_type": "INTERVIEW",
+      "entity_id": "INT-2026-990003",
+      "exception_type": "WITHDRAWN_CANDIDATE_SCHEDULED",
+      "description": "Interview INT-2026-990003 remains SCHEDULED for candidate application APP-CAND-000052-REQ-2026-000137 which is REJECTED.",
+      "injected_at": "2026-10-30T04:24:04.127424",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000018",
+      "entity_type": "SCORECARD",
+      "entity_id": "SCORE-INT-2026-000001-INTV-005",
+      "exception_type": "IRRELEVANT_CRITERIA",
+      "description": "Scorecard SCORE-INT-2026-000001-INTV-005 evaluated irrelevant culinary criteria.",
+      "injected_at": "2026-10-30T04:24:04.127825",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000019",
+      "entity_type": "SCORECARD",
+      "entity_id": "SCORE-INT-2026-000002-INTV-003",
+      "exception_type": "IRRELEVANT_CRITERIA",
+      "description": "Scorecard SCORE-INT-2026-000002-INTV-003 evaluated irrelevant culinary criteria.",
+      "injected_at": "2026-10-30T04:24:04.128012",
+      "is_resolved": false
+    },
+    {
+      "id": "GT-000020",
+      "entity_type": "SCORECARD",
+      "entity_id": "SCORE-INT-2026-000003-INTV-008",
+      "exception_type": "IRRELEVANT_CRITERIA",
+      "description": "Scorecard SCORE-INT-2026-000003-INTV-008 evaluated irrelevant culinary criteria.",
+      "injected_at": "2026-10-30T04:24:04.128155",
+      "is_resolved": false
+    }
+  ]
+}
