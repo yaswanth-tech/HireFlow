@@ -4,11 +4,12 @@
 
 ---
 
-## 🌐 Live Deployment & Links
+## 🌐 Local Application & Repository Links
 
-| Service | Link | Description |
+| Service | Link / Address | Description |
 |---|---|---|
-| **Live Vercel Application** | 🔗 **[https://frontend-seven-cyan-7ucs76horz.vercel.app](https://frontend-seven-cyan-7ucs76horz.vercel.app)** | Production web application deployed on Vercel |
+| **Local Web Application** | 🔗 **[http://localhost:5173](http://localhost:5173)** | Live React + Vite frontend application running locally |
+| **Local FastAPI Backend & Swagger API** | 🔗 **[http://localhost:8000/docs](http://localhost:8000/docs)** | Interactive OpenAPI Swagger documentation & REST API |
 | **GitHub Repository** | 🔗 **[https://github.com/yaswanth-tech/HireFlow](https://github.com/yaswanth-tech/HireFlow)** | Full-stack source code, tests, and documentation |
 
 ---
