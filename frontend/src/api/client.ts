@@ -1,9 +1,17 @@
 import snapshot from './live_snapshot.json';
 import demoMetrics from './demo_data.json';
 
+// In local development with backend running, use '/api/v1'.
+// On Vercel static deployment (hostname contains 'vercel.app'), serve instantly from client snapshot.
+const isVercel = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
 const API_BASE = '/api/v1';
 
 async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+  // If deployed on Vercel without a proxy backend, return verified snapshot data immediately
+  if (isVercel) {
+    return Promise.resolve(getFallbackData(endpoint, options) as T);
+  }
+
   const token = localStorage.getItem('hireflow_token');
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
@@ -24,10 +32,9 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
       return await res.json();
     }
   } catch (e) {
-    // Fall back to offline/Vercel static snapshot
+    // network error fallback
   }
 
-  // Graceful fallback to rich snapshot data when hosted on static platform like Vercel
   return getFallbackData(endpoint, options) as T;
 }
 
